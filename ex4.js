@@ -13,7 +13,7 @@
     {
     id: 3,
     name: "Zygmunt",
-          notes: []
+          notes: [2, 2, 4, 4, 3, 3]
     }
     ] 
 
@@ -22,7 +22,7 @@ function getStudentTopNotes(array){
         // if (item.notes.length == 0){
         //     return 0;
         // }
-      return Math.max(...item.notes,0);
+      return Math.max(...item.notes);
     })
     return arr;
 }
